@@ -1,0 +1,115 @@
+:root {
+  --bg: #121212;
+  --card: #1c1c1f;
+  --text: #f4f1ee;
+  --muted: #a9a5a0;
+  --accent: #ff7aa2;
+  --good: #7be0a0;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: radial-gradient(circle at top, #2a1f2d, var(--bg) 60%);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.card {
+  width: 100%;
+  max-width: 480px;
+  background: var(--card);
+  border-radius: 20px;
+  padding: 28px 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+h1 { margin: 0 0 8px; font-size: 1.6rem; }
+h2 { font-size: 1.15rem; line-height: 1.4; }
+.muted { color: var(--muted); font-size: 0.95rem; }
+
+.progress {
+  height: 6px;
+  background: #2c2c30;
+  border-radius: 99px;
+  margin: 16px 0 20px;
+  overflow: hidden;
+}
+.progress span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: var(--accent);
+  transition: width 0.4s ease;
+}
+
+form { display: flex; gap: 8px; }
+
+input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #38383d;
+  background: #121214;
+  color: var(--text);
+  font-size: 1rem;
+}
+input:focus { outline: 2px solid var(--accent); }
+
+button {
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--accent);
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:hover { filter: brightness(1.08); }
+button.ghost {
+  background: transparent;
+  color: var(--muted);
+  padding: 8px 0;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+#start { width: 100%; margin-top: 8px; }
+
+.feedback { min-height: 1.4em; font-weight: 600; }
+.feedback.good { color: var(--good); }
+.feedback.bad { color: var(--accent); }
+
+ul { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 12px; }
+li {
+  background: #232327;
+  border-radius: 14px;
+  padding: 14px 16px;
+  animation: pop 0.4s ease both;
+}
+li strong { display: block; }
+li .by { color: var(--muted); font-size: 0.9rem; }
+li p { margin: 8px 0; font-size: 0.95rem; }
+li a { color: var(--accent); font-weight: 600; text-decoration: none; }
+
+@keyframes pop {
+  from { opacity: 0; transform: translateY(8px) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 22px;
+  animation: float 2.2s ease-out forwards;
+  pointer-events: none;
+}
+@keyframes float {
+  to { transform: translateY(-80vh); opacity: 0; }
+}
