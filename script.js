@@ -102,7 +102,7 @@ $("form").addEventListener("submit", (e) => {
     current++;
     if (current >= CONFIG.questions.length) showReward();
     else showQuestion();
-  }, 2200);
+  }, 5000);
 });
 
 $("hintBtn").addEventListener("click", () => {
