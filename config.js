@@ -6,7 +6,7 @@ const CONFIG = {
     {
       q: "How many seconds should a proper hug last for best effect? (Hint: science says it's a lot)",
       answers: ["20", "twenty", "20 seconds"],
-      hint: "Your birthday",
+      hint: "Your birthday.",
       reward: "u pick tonight's dessert 🍰"
     },
     {
