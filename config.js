@@ -1,42 +1,36 @@
-// ✏️ EDIT THIS FILE ONLY. Everything on the page comes from here.
-
 const CONFIG = {
   title: "A Little Game For You",
   intro: "Answer my questions right and you win something. Ready?",
 
   questions: [
     {
-      q: "Which artist shows up the most in the first 30 songs of my playlist?",
-      // Accepted answers: lowercase, any of these counts as correct
-      answers: ["malcolm todd", "malcolm"],
-      hint: "Think sweet boy, think accutane...",
-      reward: "You pick tonight's dessert 🍰"
+      q: "How many seconds should a proper hug last for best effect? (Hint: science says it's a lot)",
+      answers: ["20", "twenty", "20 seconds"],
+      hint: "More than 10, less than 30.",
+      reward: "u pick tonight's dessert 🍰"
     },
     {
-      q: 'Finish this: "Slow love is still ____ love."',
-      answers: ["real"],
-      hint: "The opposite of fake.",
-      reward: "One 60-second shoulder rub 💆"
+      q: 'Where do I want to travel with u most?',
+      answers: ["japan"],
+      hint: "Anime.",
+      reward: "One flight ticket for u in the future hehe :3"
     },
     {
-      // ⚠️ CHANGE THIS: a question only the two of you know
-      q: "Where did we first meet?",
-      answers: ["CHANGE ME"],
-      hint: "You were there too.",
-      reward: "One over-the-top compliment, delivered with a straight face 😌"
+      q: "What's the one thing I'd never change about you?",
+      answers: ["everything"],
+      hint: "You are already perfect.",
+      reward: "You choose where we eat next 🍜"
     },
     {
-      // ⚠️ CHANGE THIS
       q: "What was the first thing I noticed about you?",
-      answers: ["CHANGE ME"],
-      hint: "It wasn't your phone.",
+      answers: ["face card"],
+      hint: "It never declines.",
       reward: "A voice message from me, just for you 🎙️"
     },
     {
-      // ⚠️ CHANGE THIS
-      q: "Which song on the playlist sounds the most like you?",
-      answers: ["CHANGE ME"],
-      hint: "Scroll up, you know it.",
+      q: "Which artist shows up the most in the first 30 songs of my playlist?",
+      answers: ["malcolm todd", "malcolm"],
+      hint: "Think sweet boy, think accutane...",
       reward: "Final prize unlocked: your mini playlist 🎧"
     }
   ],
@@ -56,5 +50,5 @@ const CONFIG = {
     { title: "Home", artist: "Luke Chiang", note: "Because you feel like it." }
   ],
 
-  finalMessage: "You won. Now press play 💛"
+  finalMessage: "You won. Now press play 🎵"
 };
