@@ -99,7 +99,7 @@ li p { margin: 8px 0; font-size: 0.95rem; }
 li a { color: var(--accent); font-weight: 600; text-decoration: none; }
 
 @keyframes pop {
-  from { opacity: 0; transform: translateY(8px) scale(10.98); }
+  from { opacity: 0; transform: translateY(8px) scale(0.98); }
   to { opacity: 1; transform: none; }
 }
 
