@@ -107,7 +107,7 @@ li a { color: var(--accent); font-weight: 600; text-decoration: none; }
   position: fixed;
   bottom: -20px;
   font-size: 22px;
-  animation: float 2.2s ease-out forwards;
+  animation: float 10.2s ease-out forwards;
   pointer-events: none;
 }
 @keyframes float {
