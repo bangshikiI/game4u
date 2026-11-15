@@ -25,7 +25,7 @@ const CONFIG = {
       q: "What was the first thing I noticed about you?",
       answers: ["face card"],
       hint: "It never declines.",
-      reward: "A voice message from me, just for you 🎙️"
+      reward: "Coco & Potcor"
     },
     {
       q: "Which artist shows up the most in the first 30 songs of my playlist?",
